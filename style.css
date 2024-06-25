@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Typography */
+  font-size: 16px;
+  font-family: "Segoe UI", sans-serif;
+
+  /* Colors */
+  --grey-color: #212529;
+  --pri-color: #4dabf7;
+  --sec-color: #63e6be;
+  --brt-color: #eee;
+}
+
+body {
+  line-height: 1.88;
+  color: var(--grey-color);
+
+  background-image: linear-gradient(#5253cc 50%, #fff 50%);
+
+  /* Layout */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  padding: 1.33em 3.44em 1rem;
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  color: #fff;
+}
+
+.nav-panel {
+  min-width: 420px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.spl-itm {
+  color: var(--grey-color);
+  background-color: var(--brt-color);
+  box-shadow: 4px 4px var(--grey-color);
+  padding: 0.44rem 1rem;
+  border-radius: 8px;
+  border: 2.44px solid var(--grey-color);
+}
+
+nav,
+.nav-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-container {
+  display: block;
+  position: relative;
+  background-color: var(--grey-color);
+  color: var(--brt-color);
+  padding: 1em;
+  max-width: 30rem;
+}
+
+/* Main Container */
+.user-profile-pic {
+  max-width: 48px;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+}
+
+.user-profile-pic:nth-child(2) {
+  right: 24px;
+}
+
+input {
+  outline: 0px none;
+  display: block;
+  min-width: 100%;
+  margin: 1em 0;
+}
+
+input[type="password"],
+input[type="email"] {
+  font-size: 1em;
+  padding: 1em 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--pri-color);
+  color: black;
+  font-family: inherit;
+}
+
+input[type="submit"] {
+  background-color: none;
+  font-size: 1.2rem;
+  padding: 0.66rem 1.44rem;
+  font-family: inherit;
+  background: none;
+  color: var(--pri-color);
+  border: 1px solid var(--pri-color);
+  font-weight: 800;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--pri-color);
+  color: var(--brt-color);
+}
+
+.book-section {
+  position: relative;
+  z-index: 1;
+  font-size: 1em;
+  display: grid;
+  max-width: 28rem;
+  grid-template-columns: auto;
+
+  background-color: var(--brt-color);
+  padding: 1em 2em;
+  border-radius: 1em;
+
+  /* Box Shadow Styling */
+  box-shadow: 8px 8px var(--grey-color);
+}
+
+a:link,
+a:visited {
+  font-weight: 600;
+  color: var(--pri-color);
+}
