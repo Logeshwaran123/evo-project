@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Typography */
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  /* Colors */
+  --gray-color: #222;
+  --drk-color: #252525;
+  --pri-color: #64dfdf;
+  --sec-color: #6930c3;
+  --ter-color: #80ffdb;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Sacramento";
+}
+
+/* Body */
+body {
+  color: var(--pri-color);
+  background-color: var(--drk-color);
+
+  /* Page Layout Settings */
+  display: grid;
+  grid-template-columns: auto;
+}
+
+/* LVHA */
+a:link,
+a:visited {
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  color: var(--sec-color);
+  transition: color 0.33s ease-in-out;
+}
+
+a:hover,
+a:active {
+  color: var(--pri-color);
+}
+
+/* Special CSS */
+.spl-itm {
+  background-color: var(--ter-color);
+  padding: 0.66em 1em;
+  justify-self: flex-end;
+}
+
+/* Heading Text */
+.heading-text {
+  font-size: 3.77rem;
+  color: var(--sec-color);
+}
+
+/* Navigation */
+nav,
+.nav-panel {
+  display: flex;
+  column-gap: 1em;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+nav,
+section {
+  padding: 2em 13em;
+}
+
+nav {
+  column-gap: 3em;
+}
+
+.logo-text {
+  font-weight: 900;
+  letter-spacing: -4px;
+  font-size: 32px;
+}
+
+/* Hero */
+#hero {
+  margin-top: 3rem;
+  height: 90vh;
+  background-image: linear-gradient(
+    -186deg,
+    var(--drk-color) 70%,
+    var(--pri-color) 15%
+  );
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-content {
+  font-size: 1.44em;
+  flex-basis: 420px;
+  line-height: 1.45;
+}
+
+.user-image {
+  display: block;
+  max-width: 20rem;
+  border-radius: 50%;
+}
+
+/* Block Lines */
+.controls {
+  margin-top: 1.55rem;
+  display: flex;
+  column-gap: 1em;
+}
+
+.block-lines {
+  width: 12.5%;
+  height: 4px;
+  background-color: #fff;
+}
+
+.block-lines:nth-child(1) {
+  background-color: var(--sec-color);
+}
+
+/* Features */
+#feature {
+  height: 125vh;
+  background-image: linear-gradient(
+    -176deg,
+    var(--pri-color) 70%,
+    var(--drk-color) 15%
+  );
+}
