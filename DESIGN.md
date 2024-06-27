@@ -13,3 +13,9 @@
   --sec-color: #63e6be;
   --brt-color: #eee;
 ```
+
+### Attributes
+
+<a href="https://www.flaticon.com/free-icons/enjoy" title="enjoy icons">Enjoy icons created by Mayor Icons - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/concert" title="concert icons">Concert icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/concert" title="concert icons">Concert icons created by Mayor Icons - Flaticon</a>
