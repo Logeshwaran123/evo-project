@@ -1,0 +1,39 @@
+/* Mobile Responsive */
+@media (max-width: 720px) {
+  html {
+    font-size: 10px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  #root {
+    margin: 0;
+    width: 100%;
+  }
+
+  .nav-panel {
+    position: absolute;
+    top: -1000px;
+  }
+
+  .event-image {
+    width: 100vw;
+  }
+  .event-details {
+    grid-template-columns: 100%;
+  }
+
+  .details-item-wrapper {
+    row-gap: 1.33rem;
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+
+  nav,
+  section,
+  footer {
+    padding: 0 0.22rem;
+  }
+}

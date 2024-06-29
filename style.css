@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* FONT SIZE = 10px | 10 / 16 px -> 0.625 -> 62.5%  */
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --grey-col: #000;
+  --pri-col: #41b06e;
+  --sec-col: #912bbc;
+  --acc-col-1: #fff5e0;
+  --acc-col-2: #8decb4;
+
+  /* DARK */
+  --drk-col: #141e46;
+  --brg-col: #fff;
+}
+
+body {
+  color: var(--brg-col);
+  background-color: var(--grey-col);
+}
+
+/* 
+
+TYPE SCALE 
+
+FONT - RATIO : 1.250
+h1 - 3.815rem
+h2 - 3.052rem
+h3 - 2.441rem
+h4 - 1.953rem
+h5 - 1.563rem
+h6 - 1.25rem
+p - 1rem
+small - 0.8rem
+small - 0.64rem
+
+*/
+
+/* LVHA */
+.logo-element {
+  font-size: 3.815rem;
+  font-weight: 600;
+  letter-spacing: -3px;
+  color: var(--sec-col);
+}
+
+a:link,
+a:visited {
+  color: var(--brg-col);
+  text-decoration: none;
+  transition: 0.33s ease-in-out;
+}
+
+a:hover,
+a:active {
+  color: var(--pri-col);
+}
+
+.book-evt {
+  padding: 0.44em 1em;
+  border: 2px solid var(--sec-col);
+  transition: transform 0.44s ease-in-out;
+}
+
+.book-evt:active {
+  transform: scale(0.92);
+}
+
+#root {
+  margin: 3rem auto;
+  display: grid;
+  /* background-color: red; */
+  max-width: 960px;
+}
+
+nav {
+  font-size: 1.563rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-panel {
+  display: inherit;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+nav,
+section,
+footer {
+  padding: 1rem 1.75rem;
+}
