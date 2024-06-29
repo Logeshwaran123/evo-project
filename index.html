@@ -3,76 +3,140 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EVO | Home</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Event</title>
+    <link rel="stylesheet" href="event.css" />
   </head>
   <body>
-    <!-- Navigation -->
+    <!-- Navigation Section -->
     <nav>
-      <p class="logo-text">EVO</p>
+      <h1 class="logo-text">EVO</h1>
       <div class="nav-panel">
-        <a href="#" class="nav-itm">HOME</a>
-        <a href="#" class="nav-itm">CONTACT</a>
-        <a href="#" class="nav-itm">UPCOMING</a>
-        <a href="#" class="nav-itm">REGISTER</a>
-        <a href="#" class="nav-itm spl-itm">BOOK EVENT</a>
+        <div class="nav-item">HOME</div>
+        <div class="nav-item">NEWS</div>
+        <div class="nav-item">REGISTER</div>
+        <div class="nav-item spl-itm">BOOK EVENT</div>
       </div>
     </nav>
 
-    <!-- Hero -->
-    <section id="hero">
-      <div class="hero-container">
-        <!-- Hero Content -->
-        <div class="hero-content">
-          <h2 class="heading-text">Testimonial Page</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
-            alias placeat numquam excepturi ab odio animi reiciendis quisquam
-            facere ex laudantium.
-          </p>
-          <!-- Controls -->
-          <div class="controls">
-            <div class="block-lines"></div>
-            <div class="block-lines"></div>
-            <div class="block-lines"></div>
+    <div id="root">
+      <!-- Upcoming Events -->
+      <main id="upcoming-event">
+        For More
+        <!-- <more>
+          <img
+            src="./assets/icons/previous.png"
+            alt="ico-prev"
+            class="button"
+          />
+          <img src="./assets/icons/next.png" alt="ico-next" class="button" />
+        </more> -->
+        <h2 class="page-header">Upcoming Events</h2>
+        <div class="event-details">
+          <!-- Event Image -->
+          <img
+            src="./assets/images/events-pic/music-event-3.jpg"
+            alt="image-event"
+            class="image-event"
+          />
+          <summary class="event-description">
+            <h3>Music and Love</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatesvoluptas ipsa. Voluptates mollitia numquam quos ab
+              tenetur, nostrum odio aliquam laborum voluptatibus magni
+              cupiditate voluptas ipsa.
+            </p>
+          </summary>
+          <!-- Feature Item -->
+          <div class="feature-item">
+            <div class="wrapper">
+              <img
+                src="./assets/icons/price-tag.png"
+                alt="price-tag-icon"
+                class="feat-ico feat-ico-price"
+              />
+              <p class="det det-price">$ 120.00</p>
+            </div>
+            <div class="wrapper">
+              <img
+                src="./assets/icons/cutlery.png"
+                alt="food-icon"
+                class="feat-ico feat-ico-food"
+              />
+              <p class="det det-food">Starters and Sea Foods</p>
+            </div>
+            <div class="wrapper">
+              <img
+                src="./assets/icons/pin.png"
+                alt="pin-icon"
+                class="feat-ico feat-ico-pin"
+              />
+              <p class="det det-pin">South Mint Street, AC City</p>
+            </div>
+          </div>
+          <div class="feature-content"></div>
+        </div>
+      </main>
+      <!-- More Events -->
+      <aside>
+        <p>More Events</p>
+        <div class="item">
+          <img
+            src="./assets/images/events-pic/dj-event-1.jpg"
+            alt="dj-event-image"
+            class="more-event-image"
+          />
+          <div class="details">
+            <h4 class="more-event-heading">DJ WITH GEN Z</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Repellendus omnis corporis voluptatum obcaecati, voluptatem nam.
+            </p>
           </div>
         </div>
-        <!-- User Image -->
+        <div class="item">
+          <img
+            src="./assets/images/events-pic/music-event-2.jpg"
+            alt="dj-event-image"
+            class="more-event-image"
+          />
+          <div class="details">
+            <h4 class="more-event-heading">DJ WITH GEN Z</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Repellendus omnis corporis voluptatum obcaecati, voluptatem nam.
+            </p>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>Follow us</p>
+      <div class="social">
         <img
-          src="./assets/images/image-user.jpg"
-          alt="user-image"
-          class="user-image"
+          src="./assets/icons/instagram.svg"
+          alt="instagram"
+          class="ico-social"
+        />
+        <img
+          src="./assets/icons/facebook.svg"
+          alt="facebook"
+          class="ico-social"
+        />
+        <img
+          src="./assets/icons/discord.svg"
+          alt="discord"
+          class="ico-social"
         />
       </div>
-    </section>
+    </footer>
 
-    <!-- Features -->
-    <section id="feature">
-      <h2 class="heading-text">Features</h2>
-
-      <div class="wrapper-features">
-        <img src="./assets/icons/dance-icon.png" alt="dance-icon" class="" />
-      </div>
-    </section>
-
-    <!-- Current Events -->
-    <section id="current">
-      <h2 class="heading-text">Current Events</h2>
-    </section>
-
-    <!-- Newsletter -->
-    <section id="newsletter">
-      <h2 class="heading-text">Newsletter</h2>
-    </section>
-
-    <!-- About Company -->
-    <section id="about">
-      <h2 class="heading-text">About Company</h2>
-    </section>
-
-    <!-- Footer -->
-    <section id="footer">
-      <h2 class="heading-text">Footer</h2>
-    </section>
+    <img
+      src="./assets/special/wave-patterns.svg"
+      alt="wave-patterns"
+      class="wave-patterns"
+    />
   </body>
 </html>
